@@ -9,11 +9,13 @@
 * [Крафты и рецепты](docs/crafting/improved-stonecutter.md)
 * [Зачарования и эффекты брони](docs/enchantments/enchantment-levels.md)
 * [Ресурспаки](docs/resource-packs/weapon-skins.md)
+* [Правила сервера](docs/rules/general-rules.md)
 
 ## Быстрый старт
 
 1. Ознакомьтесь с [правилами сервера](docs/rules/general-rules.md).
 2. Изучите механику [призыва маунта](docs/movement/mount-summoning.md).
 3. Попробуйте создать [канат и зиплайн](docs/movement/ropes-ziplines.md).
+4. Освойте [улучшенный камнерез](docs/crafting/improved-stonecutter.md).
 
 ![Логотип сервера](assets/images/logo.png)
