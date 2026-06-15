@@ -1,0 +1,25 @@
+name: Build and Deploy Wiki
+
+on:
+  push:
+    branches: [ main ]  # Сборка при пуше в ветку main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Convert Markdown to HTML
+        uses: natescherer/markdown-to-html-with-github-style-action@v1
+        with:
+          path: 'docs/**/*.md'  # Конвертировать все .md в папке docs
+          outputpath: 'docs'   # Сохранять HTML в ту же папку docs
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: \${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs  # Папка, которую нужно выложить (где лежат HTML)
+          force_orphan: true   # Важно для перезаписи истории
