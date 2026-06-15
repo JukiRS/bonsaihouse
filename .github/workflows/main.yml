@@ -13,21 +13,18 @@ jobs:
 
       - name: Get list of Markdown files
         run: |
-          # Устанавливаем модуль fs (обычно уже есть, но на всякий случай)
-          npm install fs
-          # Запускаем наш скрипт и сохраняем результат в переменную
-          FILES=\$(node get-md-files.js)
+          FILES=$(find docs -name "*.md" -type f | tr '\n' ',' | sed 's/,$//')
           echo "FILES=$FILES" >> $GITHUB_ENV
 
       - name: Convert Markdown to HTML
         uses: natescherer/markdown-to-html-with-github-style-action@v1.1.0
         with:
-          path: \${{ env.FILES }}
+          path: ${{ env.FILES }}
           outputpath: docs
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: \${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
           force_orphan: true
