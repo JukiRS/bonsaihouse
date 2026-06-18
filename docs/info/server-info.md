@@ -8,8 +8,9 @@
 |---|---|
 | 🌳 Текущий сезон | **3** |
 | 🐤 Версия | **Java 1.21.11** |
-| 🌐 Айпи №1 | `bonsai.vanilla.house` |
-| 🌐 Айпи №2 | `bonsai.vanilla.cool` |
+| 🌐 Основной IP | `mc.bonsaihouse.ru` |
+| 🌐 Запасной IP №1 | `bonsai.vanilla.house` |
+| 🌐 Запасной IP №2 | `bonsai.vanilla.cool` |
 
 ## Перезапуск сервера
 

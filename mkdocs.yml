@@ -110,14 +110,15 @@ nav:
       - 📖 Усиление чар: enchantments/enchantment-levels.md
       - 🛡️ Эффекты брони: enchantments/armor-effects.md
   - 🎨 Ресурспаки:
+      - 📦 Обязательные ресурспаки: resource-packs/required.md
       - 🗡️ Скины оружия: resource-packs/weapon-skins.md
       - 🍽️ KSEPSP: resource-packs/kseps.md
-  - 🧩 Разное:
+  - 🧩 Моды: mods/mods.md
+  - 🗃️ Разное:
       - ⚙️ Улучшитель спавнеров: misc/spawner-upgrader.md
       - 💀 Тотем бессмертия: misc/totem-of-immortality.md
       - 📝 Подписывание предметов: misc/item-signing.md
       - 💰 Торговля с бронником: misc/armorer-trading.md
       - 🎵 Музыка на пластинках: misc/custom-music.md
-      - 👋 Emotecraft и PatPat: misc/emotecraft-patpat.md
   - 📜 Правила:
       - ⚖️ Правила сервера: rules/general-rules.md

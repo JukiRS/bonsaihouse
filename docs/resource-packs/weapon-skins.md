@@ -10,6 +10,10 @@
 
 🔗 [Realm of Majestica](https://realm-of-majestica.webflow.io)
 
+## Скачать
+
+[⬇️ Скачать ресурспак](../downloads/weapon-skins.zip){ .md-button .md-button--primary download="weapon-skins.zip" }
+
 ---
 
 **Смотрите также:**

@@ -19,4 +19,4 @@
 
 **Смотрите также:**
 
-* [Emotecraft и PatPat](emotecraft-patpat.md)
+* [Моды](../mods/mods.md)

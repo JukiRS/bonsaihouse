@@ -26,7 +26,7 @@ hide:
 ## Быстрый старт
 
 <ol class="bh-steps" markdown>
-<li markdown>Зайдите на сервер: `bonsai.vanilla.house` (версия **Java 1.21.11**).</li>
+<li markdown>Зайдите на сервер: `mc.bonsaihouse.ru` (версия **Java 1.21.11**).</li>
 <li markdown>Ознакомьтесь с [правилами сервера](rules/general-rules.md) и напишите ник в WhiteList.</li>
 <li markdown>Узнайте про [валюту — листочки](info/currency.md).</li>
 <li markdown>Изучите [механики передвижения](movement/mount-summoning.md) и [крафты](crafting/improved-stonecutter.md).</li>

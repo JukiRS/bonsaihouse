@@ -6,6 +6,10 @@
 
 🔗 [KSEPSP Website](https://definitelyawhale.github.io/ksepsp_website/)
 
+## Скачать
+
+[⬇️ Скачать ресурспак](../downloads/ksepsp.zip){ .md-button .md-button--primary download="ksepsp.zip" }
+
 ---
 
 **Смотрите также:**
