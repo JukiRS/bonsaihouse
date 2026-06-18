@@ -8,8 +8,8 @@
 |---|---|
 | 🌳 Текущий сезон | **3** |
 | 🐤 Версия | **Java 1.21.11** |
-| 🫵 Айпи №1 | `bonsai.vanilla.house` |
-| 🫵 Айпи №2 | `bonsai.vanilla.cool` |
+| 🌐 Айпи №1 | `bonsai.vanilla.house` |
+| 🌐 Айпи №2 | `bonsai.vanilla.cool` |
 
 ## Перезапуск сервера
 
