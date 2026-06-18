@@ -497,16 +497,16 @@ body {
 /* ============================================================
    Боковое меню в стиле GitBook (группы-заголовки + иконки)
    ============================================================ */
-/* Заголовок «BONSAI HOUSE» над меню */
+/* Заголовок «BONSAI HOUSE» над меню (в мобильном drawer — сплошной фон,
+   чтобы пункты не просвечивали сквозь него при прокрутке) */
 .md-nav--primary > .md-nav__title {
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-weight: 800;
   color: var(--bonsai-mint);
-  opacity: 0.85;
-  box-shadow: none;
-  background: transparent;
+  background: var(--bonsai-bg-2);
+  border-bottom: 1px solid var(--bonsai-border);
 }
 
 /* Группы верхнего уровня = заголовки разделов */
