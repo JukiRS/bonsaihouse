@@ -509,43 +509,48 @@ body {
   border-bottom: 1px solid var(--bonsai-border);
 }
 
-/* Группы верхнего уровня = заголовки разделов */
-.md-nav--primary .md-nav__item--section {
-  margin-top: 1.1rem;
-}
-.md-nav--primary .md-nav__item--section > .md-nav__link {
-  font-size: 0.72rem !important;
-  text-transform: uppercase;
-  letter-spacing: 0.9px;
-  font-weight: 800;
-  color: var(--md-default-fg-color--light) !important;
-  opacity: 0.75;
-  cursor: default;
-  pointer-events: none;
-  margin-bottom: 0.2rem;
-}
+/* GitBook-стиль бокового меню применяем ТОЛЬКО на десктопе (постоянный сайдбар).
+   На мобильном (выдвижной drawer) оставляем стандартное поведение Material,
+   иначе разделы-группы перестают раскрываться. */
+@media screen and (min-width: 76.25em) {
+  /* Группы верхнего уровня = заголовки разделов */
+  .md-nav--primary .md-nav__item--section {
+    margin-top: 1.1rem;
+  }
+  .md-nav--primary .md-nav__item--section > .md-nav__link {
+    font-size: 0.72rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    font-weight: 800;
+    color: var(--md-default-fg-color--light) !important;
+    opacity: 0.75;
+    cursor: default;
+    pointer-events: none;
+    margin-bottom: 0.2rem;
+  }
 
-/* Пункты меню */
-.md-nav--primary .md-nav__link {
-  border-radius: 8px;
-  padding: 0.36rem 0.6rem;
-  margin: 0.08rem 0;
-  font-size: 0.78rem;
-  transition: background 0.15s, color 0.15s, padding 0.15s;
-}
-.md-nav--primary .md-nav__item .md-nav__link:hover {
-  background: rgba(16, 185, 129, 0.09);
-  color: var(--bonsai-mint);
-}
-/* Активный пункт — зелёная подсветка с полоской слева (как GitBook) */
-.md-nav--primary .md-nav__link--active,
-.md-nav--primary .md-nav__item .md-nav__link--active {
-  background: rgba(16, 185, 129, 0.14);
-  color: var(--bonsai-mint) !important;
-  font-weight: 700;
-  box-shadow: inset 3px 0 0 var(--bonsai-emerald);
-}
+  /* Пункты меню */
+  .md-nav--primary .md-nav__link {
+    border-radius: 8px;
+    padding: 0.36rem 0.6rem;
+    margin: 0.08rem 0;
+    font-size: 0.78rem;
+    transition: background 0.15s, color 0.15s, padding 0.15s;
+  }
+  .md-nav--primary .md-nav__item .md-nav__link:hover {
+    background: rgba(16, 185, 129, 0.09);
+    color: var(--bonsai-mint);
+  }
+  /* Активный пункт — зелёная подсветка с полоской слева (как GitBook) */
+  .md-nav--primary .md-nav__link--active,
+  .md-nav--primary .md-nav__item .md-nav__link--active {
+    background: rgba(16, 185, 129, 0.14);
+    color: var(--bonsai-mint) !important;
+    font-weight: 700;
+    box-shadow: inset 3px 0 0 var(--bonsai-emerald);
+  }
 
-/* Скрыть стрелки-«шевроны» сворачивания (меню всегда раскрыто) */
-.md-nav--primary .md-nav__item--section > .md-nav__link .md-nav__icon,
-.md-nav--primary .md-nav__icon { display: none; }
+  /* Скрыть стрелки-«шевроны» (на десктопе меню всегда раскрыто) */
+  .md-nav--primary .md-nav__item--section > .md-nav__link .md-nav__icon,
+  .md-nav--primary .md-nav__icon { display: none; }
+}

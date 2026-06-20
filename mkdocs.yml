@@ -109,12 +109,17 @@ nav:
   - ⚡ Зачарования:
       - 📖 Усиление чар: enchantments/enchantment-levels.md
       - 🛡️ Эффекты брони: enchantments/armor-effects.md
+  - 🌟 Уникальные зачарования:
+      - 🌾 Фермер: unique-enchantments/farmer.md
+  - 🎁 Уникальные предметы:
+      - 🎩 Шляпа лета: unique-items/summer-hat.md
   - 🎨 Ресурспаки:
       - 📦 Обязательные ресурспаки: resource-packs/required.md
       - 🗡️ Скины оружия: resource-packs/weapon-skins.md
       - 🍽️ KSEPSP: resource-packs/kseps.md
   - 🧩 Моды: mods/mods.md
   - 🗃️ Разное:
+      - ☀️ Аномально жаркий день: misc/hot-day.md
       - ⚙️ Улучшитель спавнеров: misc/spawner-upgrader.md
       - 💀 Тотем бессмертия: misc/totem-of-immortality.md
       - 📝 Подписывание предметов: misc/item-signing.md
