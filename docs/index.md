@@ -10,7 +10,7 @@ hide:
 
 <span class="bh-badge">Сезон 3</span>
 
-# Bonsai House Wiki
+# Bonsai House
 
 <p class="bh-sub">
 Полный гайд по механикам, крафтам, зачарованиям и особенностям сервера.

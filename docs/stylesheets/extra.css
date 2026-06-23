@@ -665,3 +665,146 @@ body {
   .md-nav--primary .md-nav__item--section > .md-nav__link .md-nav__icon,
   .md-nav--primary .md-nav__icon { display: none; }
 }
+
+/* ============================================================
+   Круглый логотип в шапке
+   ============================================================ */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ============================================================
+   Заголовок hero — Small Caps
+   ============================================================ */
+.bh-hero h1 {
+  font-variant: small-caps;
+  font-feature-settings: "smcp" 1;
+  letter-spacing: 1.5px;
+}
+
+/* ============================================================
+   Соц-иконки в верхней панели (кликабельные картинки)
+   ============================================================ */
+.bh-social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  color: var(--bonsai-mint);
+  transition: transform 0.15s ease, color 0.15s ease;
+}
+.bh-social svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  fill: currentColor;
+}
+.bh-social:hover { transform: translateY(-1px) scale(1.15); }
+.bh-social[title="Discord"]:hover { color: #8b9cff; }
+.bh-social[title="TikTok"]:hover { color: #ffffff; }
+
+/* ============================================================
+   Анимация администрации — вылет слева направо
+   ============================================================ */
+.bh-reveal.bh-staff { transform: translateX(-48px); }
+.bh-reveal.bh-staff.bh-in { transform: none; }
+
+/* ============================================================
+   СВЕТЛО-СИНЯЯ ТЕМА (переключается возле поиска)
+   ============================================================ */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #dbe9fc;
+  --md-primary-bg-color: #14253b;
+  --md-accent-fg-color: #2563eb;
+  --md-default-bg-color: #eef4fb;
+  --md-typeset-a-color: #2563eb;
+  --md-code-bg-color: #e6eefb;
+  --md-code-fg-color: #1d4ed8;
+  --md-footer-bg-color: #dbe7f7;
+  --md-footer-bg-color--dark: #cfe0f5;
+
+  --bonsai-emerald: #3b82f6;
+  --bonsai-emerald-2: #2563eb;
+  --bonsai-emerald-3: #1d4ed8;
+  --bonsai-mint: #1d4ed8;
+  --bonsai-border: rgba(37, 99, 235, 0.18);
+  --bonsai-glow: rgba(59, 130, 246, 0.30);
+  --bonsai-bg: #eef4fb;
+  --bonsai-bg-2: #e3edfb;
+  --bonsai-surface: #ffffff;
+}
+
+[data-md-color-scheme="default"] body {
+  background-color: #eef4fb;
+  background-image:
+    radial-gradient(1100px 520px at 78% -8%, rgba(59, 130, 246, 0.14), transparent 60%),
+    radial-gradient(900px 480px at 8% 4%, rgba(37, 99, 235, 0.10), transparent 55%);
+}
+
+[data-md-color-scheme="default"] .md-header {
+  background: rgba(219, 233, 252, 0.88);
+}
+[data-md-color-scheme="default"] .md-search__form {
+  background: rgba(255, 255, 255, 0.9);
+}
+[data-md-color-scheme="default"] .md-banner {
+  background: linear-gradient(90deg, #dbe9fc, #e8f1ff 50%, #dbe9fc);
+}
+[data-md-color-scheme="default"] .bh-topbar-ip { color: #1f3a5f; }
+[data-md-color-scheme="default"] .bh-topbar-ip code {
+  background: rgba(37, 99, 235, 0.12);
+  color: #1d4ed8;
+}
+
+[data-md-color-scheme="default"] .md-typeset h1,
+[data-md-color-scheme="default"] .bh-hero h1 {
+  background: linear-gradient(95deg, #14253b 10%, #2563eb 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-md-color-scheme="default"] .md-typeset table:not([class]) {
+  background: #ffffff;
+}
+[data-md-color-scheme="default"] .md-typeset table:not([class]) th {
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.14), rgba(37, 99, 235, 0.05));
+  color: #14253b;
+}
+[data-md-color-scheme="default"] .md-typeset blockquote {
+  background: linear-gradient(90deg, rgba(37, 99, 235, 0.08), transparent);
+  color: #2a4a6b;
+}
+
+[data-md-color-scheme="default"] .md-typeset .admonition,
+[data-md-color-scheme="default"] .md-typeset details,
+[data-md-color-scheme="default"] .bh-card,
+[data-md-color-scheme="default"] .bh-staff {
+  background: linear-gradient(180deg, #ffffff, #f4f8ff);
+}
+
+[data-md-color-scheme="default"] .bh-hero {
+  background:
+    radial-gradient(700px 280px at 50% -20%, rgba(59, 130, 246, 0.20), transparent 70%),
+    linear-gradient(180deg, #ffffff, rgba(238, 244, 251, 0.6));
+}
+[data-md-color-scheme="default"] .bh-badge {
+  background: rgba(37, 99, 235, 0.10);
+}
+[data-md-color-scheme="default"] .bh-sub { color: rgba(20, 37, 59, 0.7); }
+[data-md-color-scheme="default"] .bh-card-title,
+[data-md-color-scheme="default"] .bh-staff-nick { color: #14253b; }
+[data-md-color-scheme="default"] .bh-card-desc,
+[data-md-color-scheme="default"] .bh-staff-name { color: rgba(20, 37, 59, 0.62); }
+
+[data-md-color-scheme="default"] .md-nav__link--active,
+[data-md-color-scheme="default"] .md-nav--primary .md-nav__link--active {
+  background: rgba(37, 99, 235, 0.12);
+}
+[data-md-color-scheme="default"] .md-typeset .md-button {
+  background: rgba(37, 99, 235, 0.08);
+}

@@ -22,33 +22,31 @@
     if (!hero) return; // только на главной
     document.body.classList.add('bh-home');
 
-    // Почти вся страница: hero, заголовки, текст, кнопки, карточки, шаги
-    var selectors = [
-      '.bh-hero-logo',
-      '.bh-badge',
-      '.bh-hero h1',
-      '.bh-sub',
-      '.bh-hero .md-button',
-      '.md-content h2',
-      '.bh-staff',
-      '.bh-steps li'
+    // Группы: [селектор, шаг стаггера в мс]. У каждой группы — свой каскад.
+    var groups = [
+      ['.bh-hero-logo', 80],
+      ['.bh-badge', 80],
+      ['.bh-hero h1', 80],
+      ['.bh-sub', 80],
+      ['.bh-hero .md-button', 80],
+      ['.md-content h2', 0],
+      ['.bh-staff', 130],   // администрация — заметный вылет слева направо
+      ['.bh-steps li', 90]
     ];
 
     var targets = [];
-    selectors.forEach(function (sel) {
-      document.querySelectorAll(sel).forEach(function (el) {
+    groups.forEach(function (g) {
+      var local = 0;
+      document.querySelectorAll(g[0]).forEach(function (el) {
         if (el.dataset.bhReveal) return;
         el.dataset.bhReveal = '1';
         el.classList.add('bh-reveal');
+        el.style.transitionDelay = (local * g[1]) + 'ms';
+        local++;
         targets.push(el);
       });
     });
     if (!targets.length) return;
-
-    // Стаггер: задержка по порядку появления
-    targets.forEach(function (el, i) {
-      el.style.transitionDelay = Math.min(i * 60, 600) + 'ms';
-    });
 
     // Принудительный reflow, чтобы стартовое состояние (opacity:0) отрисовалось
     void document.body.offsetHeight;

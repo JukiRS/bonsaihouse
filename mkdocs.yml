@@ -21,6 +21,15 @@ theme:
     - scheme: slate
       primary: custom
       accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Светло-синяя тема
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Тёмная тема
   features:
     - navigation.instant
     - navigation.instant.progress
@@ -48,10 +57,10 @@ extra:
       name: TikTok
 
 extra_css:
-  - stylesheets/extra.css?v=20260621d
+  - stylesheets/extra.css?v=20260623
 
 extra_javascript:
-  - javascripts/extra.js?v=20260621d
+  - javascripts/extra.js?v=20260623
 
 markdown_extensions:
   - admonition
