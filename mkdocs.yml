@@ -57,10 +57,10 @@ extra:
       name: TikTok
 
 extra_css:
-  - stylesheets/extra.css?v=20260623
+  - stylesheets/extra.css?v=20260623b
 
 extra_javascript:
-  - javascripts/extra.js?v=20260623
+  - javascripts/extra.js?v=20260623b
 
 markdown_extensions:
   - admonition
