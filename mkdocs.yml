@@ -4,7 +4,7 @@ site_author: Bonsai House
 site_url: https://wiki.bonsaihouse.ru/
 
 docs_dir: docs
-copyright: Bonsai House Wiki
+copyright: '© 2026 BonsaiHouse — Все права защищены. BonsaiHouse не связан с MojangAB<br>Создатель: Соковец Григорий Юрьевич'
 
 theme:
   name: material
